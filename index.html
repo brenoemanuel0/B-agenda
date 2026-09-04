@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-agenda</title>
+</head>
+
+<body>
+    <header>
+        <h1>B-AGENDA</h1>
+        <nav>
+            <a href="#contato">contato</a>
+            <a href="#endereço">endereço</a>
+            <a href="#login">login</a>
+        </nav>
+    </header>
+    <main>
+        <section id="servicos">
+            <h2>SERVIÇOS</h2>
+
+            <article>
+                <img src="corte.webp" alt="imagem-de-um-corte" width="200">
+                <p>apenas o corte</p>
+                <span>R$ 25,00</span>
+            </article>
+
+            <article>
+                <img src="corte-barba.webp" alt="imagem-de-um-corte-barba" width="200">
+                <p>corte + barba / bigode</p>
+                <span>R$ 30,00</span>
+            </article>
+
+            <article>
+                <img src="pezinho.webp" alt="imagem-de-um-corte-barba" width="200">
+                <p>pezinho</p>
+                <span>R$ 5,00</span>
+            </article>
+        </section>
+
+        <section id="formulario">
+            <h2>AGENDE</h2>
+
+            <form>
+                <p>Escolha o serviço desejado:</p>
+
+                <input type="radio" id="corte" name="servico" value="corte">
+                <label for="corte">Corte de Cabelo</label><br>
+
+                <input type="radio" id="combo" name="servico" value="combo">
+                <label for="combo">Corte + Barba</label><br>
+
+                <input type="radio" id="pezinho" name="servico" value="pezinho">
+                <label for="pezinho">pezinho</label><br>
+
+                <label for="data-agendamento">Data do Agendamento:</label>
+                <input type="date" id="data-agendamento"><br>
+
+                <label for="horario-do-agendamento">horario do agendamento</label>
+                <input type="time" id="horario-do-agendamento"><br>
+
+                <label for="name">nome</label>
+                <input type="text" id="name" placeholder="Matheus Da Cunha"><br>
+
+                <label for="zap">whatsapp</label>
+                <input type="tel" minlength="11" id="zap" maxlength="11" placeholder="38983567324"><br>
+
+                <label for="email">email</label>
+                <input type="email" id="email" placeholder="junior345@gmail.com"><br>
+
+                <label for="enviar">enviar</label>
+                <input type="submit" id="enviar"><br>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; by Breno Emanuel </p>
+    </footer>
+</body>
+
+</html>
