@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B-agenda</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -12,8 +13,8 @@
         <h1>B-AGENDA</h1>
         <nav>
             <a href="#contato">contato</a>
-            <a href="#endereço">endereço</a>
-            <a href="#login">login</a>
+            <a href="#serviços">serviços</a>
+            <a href="#formulario">agende</a>
         </nav>
     </header>
     <main>
@@ -22,19 +23,19 @@
 
             <article>
                 <img src="corte.webp" alt="imagem-de-um-corte" width="200">
-                <p>apenas o corte</p>
+                <p>Apenas o corte</p>
                 <span>R$ 25,00</span>
             </article>
 
             <article>
                 <img src="corte-barba.webp" alt="imagem-de-um-corte-barba" width="200">
-                <p>corte + barba / bigode</p>
+                <p>Corte + barba / bigode</p>
                 <span>R$ 30,00</span>
             </article>
 
             <article>
                 <img src="pezinho.webp" alt="imagem-de-um-corte-barba" width="200">
-                <p>pezinho</p>
+                <p>Pezinho</p>
                 <span>R$ 5,00</span>
             </article>
         </section>
@@ -43,34 +44,50 @@
             <h2>AGENDE</h2>
 
             <form>
-                <p>Escolha o serviço desejado:</p>
+                <h3>Escolha o serviço desejado:</h3>
 
-                <input type="radio" id="corte" name="servico" value="corte">
-                <label for="corte">Corte de Cabelo</label><br>
+               <div>
+                <label for="selecione">selecione o serviço</label>
+                <select id="selecione">
+                    <option>Corte + barba / bigode</option>
+                    <option>Apenas o corte</option>
+                    <option>Pezinho</option>
+                </select>
+               </div>
 
-                <input type="radio" id="combo" name="servico" value="combo">
-                <label for="combo">Corte + Barba</label><br>
+                <div>
+                    <label for="data-agendamento">Data do Agendamento:</label>
+                    <input type="date" id="data-agendamento">
+                </div>
 
-                <input type="radio" id="pezinho" name="servico" value="pezinho">
-                <label for="pezinho">pezinho</label><br>
+                <div>
+                    <label for="horario-do-agendamento">Horario do agendamento</label>
+                    <input type="time" id="horario-do-agendamento">
+                </div>
 
-                <label for="data-agendamento">Data do Agendamento:</label>
-                <input type="date" id="data-agendamento"><br>
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Matheus Da Cunha">
+                </div>
 
-                <label for="horario-do-agendamento">horario do agendamento</label>
-                <input type="time" id="horario-do-agendamento"><br>
+                <div>
+                    <label for="zap">Whatsapp</label>
+                    <input type="tel" minlength="11" id="zap" maxlength="11" placeholder="38983567324">
+                </div>
 
-                <label for="name">nome</label>
-                <input type="text" id="name" placeholder="Matheus Da Cunha"><br>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="junior345@gmail.com">
+                </div>
 
-                <label for="zap">whatsapp</label>
-                <input type="tel" minlength="11" id="zap" maxlength="11" placeholder="38983567324"><br>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha">
+                </div>
 
-                <label for="email">email</label>
-                <input type="email" id="email" placeholder="junior345@gmail.com"><br>
-
-                <label for="enviar">enviar</label>
-                <input type="submit" id="enviar"><br>
+                <div>
+                    <button>Enviar</button>
+                </div>
         </section>
 
         <section class="contato" id="contato">
